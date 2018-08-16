@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Hangman</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/styles.css" /> 
+    <link rel="stylesheet" href="Scripts/animate.css" />
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title" class="wow lightSpeedIn"> HANGMAN </h1>
+
+
+        <div id="select" class="wow slideInLeft">
+            <span> Select word category: </span>
+            <select id="categories">
+                <option value="animals">Animals</option>
+                <option value="footballTeams" selected>Football Teams</option>
+                <option value="capitalCities" selected>Capital Cities</option>
+            </select>
+        </div>
+        <button id="start" class="wow lightSpeedIn"> NEW GAME </button>
+        <div id="reasons" class="game lightSpeedIn">
+            <div id="letters"></div>
+            <div>
+                <img id="hangmanImage" />
+            </div>
+            <span id="labelLiveLeft"> </span>
+            <span id="livesLeft"></span>
+        </div>
+        <div id="keyboard" class="game slideInLeft">
+            <div id="keyboard1"></div>
+            <div id="keyboard2"></div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content  modalanimation bounceInDown">
+            <span class="close">&times;</span>
+            <p id="status"> </p>
+        </div>
+
+    </div>
+
+  
+  
+    <audio id="audiowin" src="Audio/win.wav" ></audio>
+    <audio id="audiolose" src="Audio/lose.wav" ></audio>
+  
+ 
+    <script src="Scripts/wordList.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- <script src="jquery-3.3.1.min.js"></script> -->
+    <script src="Scripts/main.js"></script>
+    <script src="Scripts/wow.min.js"></script>
+    <script src="Scripts/pageLoad.js"></script>
+
+</body>
+
+</html>
