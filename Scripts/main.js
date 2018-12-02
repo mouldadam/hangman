@@ -197,8 +197,6 @@ function clickLetterHandler(letter) {
         countHangman++
         livesLeft--
         document.getElementById("livesLeft").innerHTML = livesLeft
-
-
         document.getElementById("hangmanImage").setAttribute('src', images[countHangman])
 
         // if livesleft = 0 or counthangman = 8 then display game over modal
