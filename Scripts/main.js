@@ -2,7 +2,6 @@
 by selecting letters
 */
 
-
 // setting the paths to the hangman images in the array images
 var images = [
     './Images/Empty.png',
@@ -24,13 +23,12 @@ var livesLeft
 var chars
 // the hiddent or secret word users have to guess
 var word
-//  number of correct charactes selected
+//  number of correct charactes selected¬`
 var numcorrectletters
 
 function Initialize() {
     // Resets all HTML elements and variables
 
-   
     // resets the visbiltu of the hangman image , letter and keyboard to hidden
         var elementArray;
         elementArray = document.getElementsByClassName("game");
@@ -64,7 +62,6 @@ function Initialize() {
         }
         document.getElementById("hangmanImage").setAttribute('src', "");
     }
-
 
 // Starting the game by clicking the New Game Button
 var eventListenerStart = document.getElementById("start").addEventListener("click", Start)
@@ -110,7 +107,6 @@ function Start() {
     // Creating an array of letters of the chosen word
     chars = word.split("")
 
-
     // creating span elements for each character of the word and setting it to readonly
     for (var i = 0; i < word.length; i++) {
         var x = document.createElement('span');
@@ -140,7 +136,6 @@ function Start() {
             var letter = event.target.getAttribute('id');
             clickLetterHandler(letter);
         }
-
         document.getElementById("keyboard2").appendChild(button2);
     }
 }
@@ -165,8 +160,6 @@ function clickLetterHandler(letter) {
 
         wows.init();
     });
-
-
 
     // Get the modal
     var modal = document.getElementById('myModal');
@@ -216,9 +209,7 @@ function clickLetterHandler(letter) {
             document.getElementsByClassName("modal-content")[0].style.backgroundColor = "red";
             // setTimeout(function () { alert('Game Over! You have been Hung!'); location.reload(); }, 0.5e3)
             modal.style.display = "block";
-
         }
-
     }
   console.log(numcorrectletters)
   console.log(chars.length)
@@ -230,8 +221,6 @@ function clickLetterHandler(letter) {
         // setTimeout(function () { alert('You suvived! You Won!'); location.reload(); }, 0.5e3)
         modal.style.display = "block";
     }
-  
-
 }
 
 
