@@ -6,7 +6,7 @@
 body{
     background-image: url("../Images/abstract-architecture-attractive-988873.jpg");
     background-size: cover;
-    font-family:HennyPenny-Regular;
+    font-family:mrsmonster;
     text-align: center
 }
 
@@ -19,7 +19,7 @@ body{
 
 
 #title{
-    font-family: FontVision;
+    font-family: mrsmonster;
     margin: 0px;
 }
 
@@ -43,11 +43,13 @@ body{
 margin-top: 10px;
 }
 #select{
-    margin : 10px 0px 10px 0px
+    margin : 10px 0px 10px 0px;
+    display: block;
+    visibility: visible;
 }
 
 #categories, #start{
-    font-family:HennyPenny-Regular
+    font-family:mrsmonster
 }
 #letters >  span {
     margin: 0px 10px 0px 10px;
@@ -85,7 +87,7 @@ transform :scale(3)
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 35vh; /* Location of the box */
+    /* padding-top: 35vh; Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -98,7 +100,7 @@ transform :scale(3)
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
-    margin: auto;
+    margin: 25vh auto;;
     padding: 20px;
     border: 3px solid rgb(0, 0, 0);
     width: 40%;
