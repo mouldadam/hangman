@@ -209,8 +209,7 @@ function clickLetterHandler(letter) {
             modal.style.display = "block";
         }
     }
-  console.log(numcorrectletters)
-  console.log(chars.length)
+ 
     if (numcorrectletters === chars.length) {
         var win = document.getElementById("audiowin");
         win.play();
